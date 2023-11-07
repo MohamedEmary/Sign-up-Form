@@ -1,0 +1,4 @@
+sign up button: #596D48
+border: #E5E7EB error
+:focus blue border and a very light shadow
+Verify that the two password fields are identical using JS
