@@ -1,3 +1,6 @@
+# Custom Files
+.history
+
 # Logs
 logs
 *.log
