@@ -10,7 +10,7 @@ body {
 
 :root {
   --left-div-width: 35vw;
-  --left-space: 30px;
+  --left-space: 50px;
 }
 
 .main {
@@ -27,7 +27,7 @@ body {
   flex: 3;
   flex-direction: column;
   color: white;
-  font-size: 5rem;
+  font-size: 5.5rem;
   justify-content: space-between;
 }
 
@@ -38,7 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90px;
+  height: 120px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.45);
 }
@@ -61,19 +61,19 @@ img {
 
 .right {
   background-color: whitesmoke;
-  flex: 7;
+  flex: 5;
 }
 
 .upper {
   font-weight: bold;
   box-sizing: border-box;
-  font-size: larger;
+  font-size: 1.4rem;
   padding-left: var(--left-space);
-  padding-right: 15px;
+  padding-right: 100px;
 }
 
 .upper p:first-child {
-  padding-top: 10vh;
+  padding-top: max(6vh, 60px);
 }
 
 .form-inputs {
@@ -102,11 +102,11 @@ img {
 }
 
 input {
-  width: 200px;
+  width: 290px;
   border: 1px solid gray;
   border-radius: 5px;
-  height: 3vh;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
+  height: 30px;
 }
 
 input:focus {
@@ -121,17 +121,21 @@ label {
 }
 
 .left-col {
-  margin-right: 20px;
+  margin-right: 100px;
 }
 
 input[type="submit"] {
   color: white;
   outline: 0px;
-  box-shadow: 1px;
   font-weight: bold;
   background-color: darkolivegreen;
-  width: 150px;
-  height: 35px;
+  width: 210px;
+  height: 50px;
+  font-size: 1.1rem;
+}
+
+.submit {
+  box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 
 .login-section {
@@ -145,4 +149,24 @@ input[type="submit"] {
 .login-section a {
   text-decoration: none;
   color: darkolivegreen;
+}
+
+#l-name {
+  outline: 1px solid blue;
+}
+
+#password,
+#password-conf {
+  outline: 1px solid red;
+}
+
+.pass input {
+  margin-bottom: 0px;
+}
+
+.pass::after {
+  color: red;
+  content: "*Passwords do not match";
+  padding-bottom: 20px;
+  font-size: small;
 }
