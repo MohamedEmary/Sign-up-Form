@@ -1,0 +1,141 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(../font/Norse-Bold.otf);
+}
+
+:root {
+  --left-div-width: 35vw;
+  --right-div-padding-left: 3vw;
+  /* --upper-and-lower-right-height: 35vh; */
+}
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  /* min-height: max(450px, 100vh); */
+  /* TODO change size based on page size not viewport size  */
+  min-height: max(500px, 100vh);
+  min-width: max(800px, 100vw);
+}
+.left {
+  background: url(../images/background.jpg) no-repeat center/cover;
+  width: var(--left-div-width);
+  font-family: norse-bold;
+  color: white;
+  font-size: 10vh;
+}
+
+.transparent {
+  position: relative;
+  top: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.transparent p {
+  margin: 0;
+}
+.transparent img {
+  height: 90%;
+}
+
+.right {
+  font-family: sans-serif;
+  width: calc(100vw - var(--left-div-width));
+  background-color: whitesmoke;
+}
+
+.upper {
+  height: 33vh;
+  /* min-height: 140px; */
+  font-weight: bold;
+  box-sizing: border-box;
+  font-size: larger;
+  padding-left: var(--right-div-padding-left);
+}
+
+.upper p:first-child {
+  padding-top: 10vh;
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 33vh;
+  box-shadow: 1px 5px 4px 0 #00000069;
+  /* min-height: 250px; */
+}
+
+h2 {
+  margin: 0;
+}
+
+.paragraph {
+  height: 25%;
+}
+
+.login-section,
+.form-inputs {
+  padding-left: var(--right-div-padding-left);
+}
+
+.form-columns {
+  display: flex;
+  height: 70%;
+}
+
+.form-columns div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input {
+  width: 16vw;
+  border: 1px solid gray;
+  border-radius: 4px;
+  height: 3vh;
+}
+
+input:focus {
+  box-shadow: 2px 2px 5px 0 black;
+  outline: 1px solid blue;
+}
+
+label {
+  font-size: small;
+  color: gray;
+  font-weight: bold;
+}
+
+.right-col {
+  margin-left: 5vw;
+}
+
+input[type="submit"] {
+  color: white;
+  outline: 0px;
+  box-shadow: 1px;
+  font-weight: bold;
+  background-color: darkolivegreen;
+  width: 12vw;
+  height: 5vh;
+}
+.login-section {
+  padding-top: 5vh;
+}
+
+.login-section p {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: darkolivegreen;
+}
