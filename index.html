@@ -2,7 +2,78 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <script src="assets/script/script.js" defer></script>
+    <title>Sign-up Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <div class="left">
+        <div class="transparent">
+          <img
+            src="assets/images/odin-lined.png"
+            alt="Odin God in Norse methology"
+          />
+          <p>ODIN</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="upper">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="lower">
+          <form action="assets/script/script.js" method="post">
+            <div class="form-inputs">
+              <div class="paragraph">
+                <h3>Let's do this!</h3>
+              </div>
+              <div class="form-columns">
+                <div class="left-col">
+                  <div class="field">
+                    <label for="f-name">FIRST NAME</label>
+                    <input id="f-name" name="f-name" type="text" />
+                  </div>
+                  <div class="field">
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" />
+                  </div>
+                  <div class="field">
+                    <label for="password">PASSWORD</label>
+                    <input id="password" name="password" type="password" />
+                  </div>
+                </div>
+                <div class="right-col">
+                  <div class="field">
+                    <label for="l-name">LAST NAME</label>
+                    <input id="l-name" name="l-name" type="text" />
+                  </div>
+                  <div class="field">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input id="phone" name="phone" type="" required />
+                  </div>
+                  <div class="field">
+                    <label for="password-conf">CONFIRM PASSWORD</label>
+                    <input
+                      id="password-conf"
+                      name="password-conf"
+                      type="password"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="login-section">
+              <input type="submit" value="Create Account" name="submit" />
+              <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
